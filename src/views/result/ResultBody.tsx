@@ -11,8 +11,12 @@ export default function ResultBody() {
   const [weather] = useAtom(weatherAtom);
 
   if (!weather) return null;
-
-  const { name: city, main: { temp }, weather: [{ main: weatherMain, icon }] } = weather;
+  
+  const weatherData = weather;
+  const city = weatherData.name;
+  const temp = weatherData.main.temp;
+  const weatherMain = weatherData.weather[0].main;
+  const icon = weatherData.weather[0].icon;
   const { formattedDate, formattedHour } = currentDate();
 
   return (
