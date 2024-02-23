@@ -7,7 +7,7 @@ export const SearchContainer = styled.div`
 export const SearchInput = styled.input`
   width: 100%;
   padding: 0.75rem;
-  padding-right: 2.5rem; /* 오른쪽에 아이콘을 위한 여유 공간 확보 */
+  padding-right: 2.5rem;
   border-radius: 0.375rem;
   background-color: white;
   color: #4b5563;
